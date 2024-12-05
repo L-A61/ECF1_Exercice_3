@@ -1,0 +1,46 @@
+@font-face {
+    font-family: pokémon;
+    src: url("../assets/Pokemon_Solid.ttf");
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+#pkmnImg {
+    width: 50%;
+    height: auto;
+}
+
+h1 {
+    color: white;
+}
+
+.title {
+    font-family: pokémon;
+    color: red;
+    text-align: center;
+}
+
+.pkmnName {
+    font-family: pokémon;
+    color: green;
+    text-align: center;
+}
+
+.bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.bar-items {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    color: white;
+    background-color: rgb(62, 62, 62);
+    width: 75%;
+}
