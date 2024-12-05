@@ -1,46 +1,146 @@
+/*Importation de la police Pokemon Solid*/
 @font-face {
     font-family: pokémon;
     src: url("../assets/Pokemon_Solid.ttf");
 }
 
-
-.card-container {
-    display: flex;
-    justify-content: center;
+/*Met le champs de saisi en rouge*/
+input {
+    background-color: red;
 }
 
-#pkmnImg {
-    width: 50%;
-    height: auto;
+/* Met le bouton en rouge*/
+button {
+    background-color: red;
 }
 
-h1 {
-    color: white;
-}
-
+/* Classe CSS pour le titre de l'application*/
 .title {
     font-family: pokémon;
     color: red;
     text-align: center;
 }
 
+/* Classe CSS pour le nom du pokémon*/
 .pkmnName {
     font-family: pokémon;
-    color: green;
     text-align: center;
 }
 
+/*Classe CSS pour le conteneur de la barre*/
 .bar-container {
+    margin-top: 2%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 
+/* Classe CSS pour les objets du conteneur de la barre*/
 .bar-items {
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
     color: white;
     background-color: rgb(62, 62, 62);
     width: 75%;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+/* Met tous les paragraphes en blanc*/
+p {
+    color: white;
+}
+
+/* Classe CSS pour le conteneur de la card */
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Classe CSS pour les objets dans le conteneur de la card */
+.card-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Classe CSS pour centrer les textes*/
+.center-text {
+    text-align: center;
+}
+
+/* CSS de l'image du pokémon*/
+#pkmnImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/* Résolution pour smartphone */
+@media screen and (max-width: 768px) {
+    
+    .title {
+        font-family: pokémon;
+        color: red;
+        text-align: center;
+    }
+    
+    .pkmnName {
+        font-family: pokémon;
+        text-align: center;
+    }
+    
+    .bar-container {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+    
+    /* Change la section contenant la saisie et le bouton pour qu'ils s'affichent en colonne */
+    .bar-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        background-color: red;
+    }
+    
+    button {
+        background-color: red;
+        display: block;
+    }
+
+    span {
+        text-align: center;
+    }
+    
+    p {
+        color: white;
+    }
+    
+    .card-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .center-text {
+        text-align: center;
+    }
+    
+    #pkmnImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
 }

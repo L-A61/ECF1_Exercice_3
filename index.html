@@ -10,8 +10,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-dark">
     <header>
+        <!--Titre et barre contenant le champs de saisie et le bouton chercher-->
         <h1 class="title">Le mini pokédex</h1>
         <section class="bar-container">
             <section class="bar-items">
@@ -22,9 +23,13 @@
         </section>
     </header>
     <main>
-        <section class="card-container" id="pkmnInfo">
-            <!-- Insère DOM card-->
+        <!--Sections qui contiendront le DOM ajouté-->
+        <section class="card-container">
+            <section class="card-dom" id="pkmnInfo">
+                <!-- Ajout du DOM card ici-->
+            </section>
         </section>
+        
     </main>
     <script src="./scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
