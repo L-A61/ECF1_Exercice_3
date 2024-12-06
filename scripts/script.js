@@ -9,7 +9,12 @@ const API_BASE = "https://pokeapi.co/api/v2/pokemon-species/";
 
 pkmnSearch.addEventListener("click", function () {
     // La valeur pour l'id est conservée dans la constante query
-    const query = pkmnID.value;
+    let query = pkmnID.value;
+
+    // La query ne peut aller au delà de 1025, limite de l'API à l'heure de l'écriture du code.
+    if (query > 1025) {
+        query = 1025;
+    }
 
     // La constante endpoint est le lien complet vers l'API
     const endpoint = `${API_BASE}${query}`;
